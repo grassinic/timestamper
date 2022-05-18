@@ -1,4 +1,11 @@
 # Docker
+- task: twistcli-scan@1
+  inputs:
+    scanType: 'images'
+    vulnerabilityThreshold: 'high'
+    onlyFixed: false
+    gracePeriod: '0'
+    complianceThreshold: 'high'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
